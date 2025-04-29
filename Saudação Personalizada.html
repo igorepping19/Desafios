@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Saudação Personalizada</title>
+       <script>
+
+        function exibir() {
+        var nomeInput = document.getElementById("meuInput");
+        var nome = nomeInput.value;
+        var div = document.getElementById("minhaMensagem");
+        var agora = new Date();
+        var hora = agora.getHours();
+        var saudacao;
+
+        if (hora >6 && hora <12) {
+            saudacao = "Bom Dia " + nome + ".";
+        } else if (hora >=12 && hora <18) {
+            saudacao = "Boa Tarde " + nome + ".";
+        }else {
+            saudacao = "Boa Noite " + nome + ".";
+        }
+
+        div.textContent = saudacao + " São " + hora + "horas."
+        }
+       </script>
+    </head>
+    <body>
+        <h1>Saudação Personalizada com Horário</h1>
+        <input id="meuInput" type="text">
+        <button id="meuBotao" onclick="exibir()">Exibir Saudação</button> 
+        <div id="minhaMensagem"></div>
+
+    </body>
+</html>
