@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Contador de Cliques</title>
+        <script>
+            var contarCliques = 0
+            
+            function contar() {
+                contarCliques++;
+                atualizarContador();
+            }
+
+            function reset() {
+                contarCliques = 0;
+                atualizarContador();
+            }
+            function atualizarContador() {
+                {
+                    totalCliquesElemento = document.getElementById('totalCliques');
+                }
+                totalCliquesElemento.textContent = "Total de Cliques: " + contarCliques;
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>Contador de cliques</h1>
+        <button id="contador" onclick="contar()"> Clique </button>
+        <button id="resetar" onclick="reset()"> Resetar</button>
+        <h2 id="totalCliques">Total de Cliques: </h2>
+
+    </body>
+</html>
+
+
+
+<!-- 1ª pesquisa : colei meu codigo. -->
+<!-- 2ª pesquisa: quero mostrar na tela o numero de cliques -->
