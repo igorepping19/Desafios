@@ -4,22 +4,22 @@
        <script>
 
         function exibir() {
-        var nomeInput = document.getElementById("meuInput");
-        var nome = nomeInput.value;
-        var div = document.getElementById("minhaMensagem");
-        var agora = new Date();
-        var hora = agora.getHours();
-        var saudacao;
+             var nomeInput = document.getElementById("meuInput");
+             var nome = nomeInput.value;
+             var div = document.getElementById("minhaMensagem");
+             var agora = new Date();
+             var hora = agora.getHours();
+             var saudacao;
 
-        if (hora >6 && hora <12) {
-            saudacao = "Bom Dia " + nome + ".";
-        } else if (hora >=12 && hora <18) {
-            saudacao = "Boa Tarde " + nome + ".";
-        }else {
-            saudacao = "Boa Noite " + nome + ".";
-        }
+            if (hora >6 && hora <12) {
+                saudacao = "Bom Dia " + nome + ".";
+            } else if (hora >=12 && hora <18) {
+                saudacao = "Boa Tarde " + nome + ".";
+            }else {
+                saudacao = "Boa Noite " + nome + ".";
+            }
 
-        div.textContent = saudacao + " São " + hora + "horas."
+            div.textContent = saudacao + " São " + hora + "horas."
         }
        </script>
     </head>
@@ -31,3 +31,6 @@
 
     </body>
 </html>
+
+
+<!-- colei 2 vezes o codigo, para verificar erros e possiveis correções -->

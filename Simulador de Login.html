@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Simulador de Login</title>
+        <script>
+            function login() {
+                var emailInput = document.getElementById("meuInput");
+                var senhaInput = document.getElementById("meuInput2");
+                var email = emailInput.value;
+                var senha = senhaInput.value;
+                var divMensagem = document.getElementById("minhaMensagem");
+                var erro = "";
+
+                if (email === "igorepping@" && senha === "12345") {
+                 erro = "Login bem sucedido.";
+                } else {
+                    erro = "Email ou Senha incorretos!";
+                }
+                divMensagem.textContent = erro;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Simulador de Login</h1>
+        <input id="meuInput" type="text">
+        <input id="meuInput2" type="text">
+        <button id="meuBotao" onclick="login()">Login</button>
+        <div id="minhaMensagem"></div>
+    </body>
+</html>
